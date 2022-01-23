@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export MOD_NAME='Template'
+export TARGET_FRAMEWORK='net472'
