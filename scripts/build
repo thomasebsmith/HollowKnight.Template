@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source ./scripts/env || exit 1
+. ./scripts/env || exit 1
 
 normalize() {
   _return="$(cd "$1" && pwd)" || return 1
@@ -39,6 +39,6 @@ dotnet build -c "$BUILD_CONFIG" || exit 1
 if [ "$#" -eq 2 ]; then
   MOD_DLL="$BUILD_OUTPUT_DIR/$MOD_NAME.dll"
   MOD_PDB="$BUILD_OUTPUT_DIR/$MOD_NAME.pdb"
-  cp "$MOD_DLL" "$MOD_PDB" "$2/$MOD_NAME/" || exit 1
   mkdir -p "$2/$MOD_NAME" || exit 1
+  cp "$MOD_DLL" "$MOD_PDB" "$2/$MOD_NAME/" || exit 1
 fi
