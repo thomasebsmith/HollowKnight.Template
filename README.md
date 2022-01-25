@@ -12,8 +12,11 @@ A template for creating Hollow Knight mods using C# 10.0.
 ```sh
 $ git clone https://github.com/thomasebsmith/HollowKnight.Template.git
 $ cd HollowKnight.Template
+
 $ ./scripts/build .../hollow/knight/Managed
 # The DLL will be built but not installed
+
+# - OR -
 
 $ ./scripts/build .../hollow/knight/Managed .../hollow/knight/Managed/Mods
 # The DLL will be built and installed
