@@ -13,7 +13,8 @@ public class Template : Mod, ITogglableMod
         Log("Initializing...");
     }
 
-    public void Unload() {
+    public void Unload()
+    {
         Log("Unloading...");
     }
 
